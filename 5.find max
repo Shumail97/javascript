@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Maximum Value of Array</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Find Maximum Value of Array</h1>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!---Js--->
+
+const X = [2, -3, -1];
+
+let max = X[0];
+
+for (let i = 1; i < X.length; i++) {
+  if (X[i] > max) {
+    max = X[i];
+  }
+}
+
+const resultElement = document.getElementById('result');
+resultElement.textContent = `The maximum value of the array is: ${max}`;
