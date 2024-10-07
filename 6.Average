@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Average of Array</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculate Average of Array</h1>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!---Js--->
+
+
+const X = [2, 1, 8];
+
+let sum = 0;
+
+for (let i = 0; i < X.length; i++) {
+  sum += X[i];
+}
+
+const average = sum / X.length;
+
+const resultElement = document.getElementById('result');
+resultElement.textContent = `The average value of the array is: ${average}`;
