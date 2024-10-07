@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Numbers from 1 to 135 with Sum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Numbers from 1 to 135 with Sum:</h1>
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!--js file--->
+
+const outputDiv = document.getElementById('output');
+let sum = 0;
+
+for (let i = 0; i <= 135; i++) {
+  sum += i;
+  outputDiv.innerHTML += `Number is: ${i} Sum: ${sum}<br>`;
+}
