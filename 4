@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Array Elements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Array Elements:</h1>
+  <ul id="output"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!--Css file-->
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #output {
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  #output li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  <!----Js sscript---->
+
+  const X = [1, 4, 2, 12];
+const outputList = document.getElementById('output');
+
+for (const element of X) {
+  const listItem = document.createElement('li');
+  listItem.textContent = element;
+  outputList.appendChild(listItem);
+}
