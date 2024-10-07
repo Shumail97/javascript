@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Replace Negative Numbers with 0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Replace Negative Numbers with 0</h1>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!---Js--->
+
+const X = [2, -1, 4, -3];
+
+for (let i = 0; i < X.length; i++) {
+  if (X[i] < 0) {
+    X[i] = 0;
+  }
+}
+
+const resultElement = document.getElementById('result');
+resultElement.textContent = `The modified array is: ${X}`;
